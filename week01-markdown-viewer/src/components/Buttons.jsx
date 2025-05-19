@@ -12,11 +12,16 @@ function Buttons({textToDownload})
         link.click();
         URL.revokeObjectURL(link.href);
     }
+
+    const copyText = () => {
+        navigator.clipboard.writeText(textToDownload);
+        //alert("Copied the text: " + textToDownload);
+    }
     
     return (
         <div className="buttons-container">
+            <button onClick={copyText}>Copy</button>
             <button onClick={downloadFile}>Download</button>
-            <button>Feature2</button>
         </div>
     );
 }

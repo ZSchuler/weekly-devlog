@@ -1,0 +1,19 @@
+.texts-container
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    gap: 2rem;
+    min-height: 75dvh;
+}
+
+.title
+{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-container
+{
+    padding-top: 2rem;
+}

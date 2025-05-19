@@ -1,0 +1,20 @@
+.buttons-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+button
+{
+    font-size: 1rem;
+    align-items: center;
+    height: 48px;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    padding: 0 1.2rem;
+    color: #F4EEE0;
+    border: none;
+    cursor: pointer;
+    background: #6D5D6E;
+}

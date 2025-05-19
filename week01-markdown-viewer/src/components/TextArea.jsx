@@ -1,17 +1,16 @@
-import { useState } from "react";
+import './TextArea.css'
 
-function TextArea() {
-
-    const [inputText, setInputText] = useState("");
+function TextArea({markdown, setMarkdown}) {
 
     return (
         <div className="input-container">
             <textarea
+                className='text-area'
                 name=""
                 id=""
                 placeholder="Begin typing Markdown to get started..."
-                value={inputText}
-                onChange={(e) => setInputText(e.target.value)}
+                value={markdown}
+                onChange={(e) => setMarkdown(e.target.value)}
             />
         </div>
     );
